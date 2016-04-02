@@ -32,6 +32,19 @@ body {
 	opacity: .8;
 	top: 330px;
 	left: 300px;
+	moz-transform: : all 1s ease;
+	webkit-transform: : all 1s ease;
+	o-transform: : all 1s ease;
+	transform: : all 1s ease;
+}
+
+.moreIndicator:hover {
+	opacity: 1;
+	moz-transform: scale(1) rotate(270deg) translate(0px);
+	webkit-transform: scale(1) rotate(270deg) translate(0px);
+	o-transform: scale(1) rotate(270deg) translate(0px);
+	transform: scale(1) rotate(270deg) translate(0px);
+	z-index: 1000;
 }
 
 .thumbnail {
@@ -58,11 +71,21 @@ body {
 
 }
 
+#prevPhoto:hover {
+   opacity: 0.8;
+
+  }
+
 #nextPhoto {
 	height: 42px;
 	width: 42px;
 	margin-left: 85%;
 }
+
+#nextPhoto:hover {
+   opacity: 0.8;
+
+  }
 
 .details p {
 	margin-top: 20px;
